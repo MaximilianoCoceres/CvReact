@@ -79,7 +79,7 @@ const Categories = {
       
       fontWeight: "bold",
       background:"violet",
-      width:"18%",
+      width:"20%",
       height:"10%",
       display:"flex",
       alignItems:"center",

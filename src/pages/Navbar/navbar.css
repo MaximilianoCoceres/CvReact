@@ -1,0 +1,46 @@
+.navbar{
+  margin: 1em 3em 0;
+}
+
+.logo > img {
+  width: 3rem;
+  height: 4rem;
+}
+
+.button:hover {
+  background: var(--background);
+  border: 2px dotted var(--backgroundButton);
+  transition: 0.7s;
+  color: var(--fontColor);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 100%;
+  }
+}
+
+.ol-list-custom ol {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+
+
+.ol-list-custom ol li{
+    padding: 0.5em;
+}
+
+
+.ol-list-custom ol li::marker {
+  color: var(--fontColor);
+  font-weight: bold;
+}

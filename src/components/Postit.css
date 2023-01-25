@@ -1,0 +1,41 @@
+.postit {
+  line-height: 1;
+  text-align: center;
+  width: 275px;
+  margin: 25px;
+  min-height: 250px;
+  max-height: 250px;
+  padding: 65px 2rem;
+  font-family: var(--fontFamily);
+  font-size: 20px;
+  border-bottom-right-radius: 60px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  transform: rotate(5deg);
+  border: 1px solid #e8e8e8;
+  
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+  .postit{
+    width: 180px;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .postit{
+    position: initial;
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .postit{
+    width: 250px;
+  }
+}
+

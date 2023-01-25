@@ -1,0 +1,11 @@
+.whatsapp{
+    box-shadow: 0px 0px 7px black;
+    color: #f5f5f5 !important;
+}
+
+.whatsapp:hover{
+    color: inherit;
+    border: 1px dotted black;
+    box-shadow: 0px 0px 4px black;
+
+}

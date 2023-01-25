@@ -1,0 +1,8 @@
+.titleSkill>h1{
+width: 80%;
+    background: repeating-linear-gradient(#F1EDE9, #F1EDE9 31px, rgb(242, 142, 142) 31px, #eccccc 32px);
+    box-shadow: 2px 5px 20px black;
+    font-weight: 700;
+    font-family: var(--fontFamily);
+    margin-bottom: 1em;
+}

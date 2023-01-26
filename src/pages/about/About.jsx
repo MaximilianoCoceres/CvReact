@@ -11,7 +11,7 @@ const About = () => {
           <div className="t-about">
             <h1>About me</h1>
             <p>
-              <mark>Hi! my name is Maxi, argentine living in Zaragoza, Spain. i'm
+              <mark>Hi! my name is Maxi from Zaragoza, Spain. i'm
               detail-oriented Junior Front End offering analytical skills and
               specially ability to function well both independently and in
               fast-paced team environments. Always eager to learn and grow.</mark>
@@ -26,7 +26,6 @@ const About = () => {
             }}
           >
             I study on my own on youtube, platzi, PixelPro.
-            I have a community manager course.
           </Postit>
           <Postit id={"postit"}
             styles={{

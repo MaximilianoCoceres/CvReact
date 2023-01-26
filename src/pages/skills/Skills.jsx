@@ -35,78 +35,6 @@ const Skills = () => {
           <div className="titleSkill design d-flex align-items-center justify-content-center">
             <h1 className="d-flex align-items-center justify-content-center">Front-End and Design</h1>
           </div>
-          <div className="col-4 col-sm-3 mb-2">
-            <ProgressProvider valueStart={0} valueEnd={valueEnd8}>
-              {(value) => (
-                <CircularProgressbarWithChildren
-                  value={value}
-                  styles={buildStyles({
-                    pathColor: "orange",
-                    trailColor: "black",
-                    pathTransitionDuration: 2,
-                  })}
-                >
-                  <img
-                    style={{ width: 50 }}
-                    src={Illustrator}
-                    alt="Illustrator"
-                  />
-                </CircularProgressbarWithChildren>
-              )}
-            </ProgressProvider>
-          </div>
-          <div className="col-4 col-sm-3 mb-2">
-            <ProgressProvider valueStart={0} valueEnd={valueEnd6}>
-              {(value) => (
-                <CircularProgressbarWithChildren
-                  value={value}
-                  styles={buildStyles({
-                    pathColor: "blue",
-                    trailColor: "black",
-                    pathTransitionDuration: 2,
-                  })}
-                >
-                  <img style={{ width: 50 }} src={Photoshop} alt="Photoshop" />
-                </CircularProgressbarWithChildren>
-              )}
-            </ProgressProvider>
-          </div>
-          <div className="col-4  col-sm-3 mb-2">
-            <ProgressProvider valueStart={0} valueEnd={valueEnd8}>
-              {(value) => (
-                <CircularProgressbarWithChildren
-                  value={value}
-                  styles={buildStyles({
-                    pathColor: "violet",
-                    trailColor: "black",
-                    pathTransitionDuration: 2,
-                  })}
-                >
-                  <img style={{ width: 50 }} src={Figma} alt="Figma" />
-                </CircularProgressbarWithChildren>
-              )}
-            </ProgressProvider>
-          </div>
-          <div className="col-4 col-sm-3 mb-2">
-            <ProgressProvider valueStart={0} valueEnd={valueEnd5}>
-              {(value) => (
-                <CircularProgressbarWithChildren
-                  value={value}
-                  styles={buildStyles({
-                    pathColor: "gray",
-                    trailColor: "black",
-                    pathTransitionDuration: 2,
-                  })}
-                >
-                  <img style={{ width: 50 }} src={Gimp} alt="Gimp" />
-                </CircularProgressbarWithChildren>
-              )}
-            </ProgressProvider>
-          </div>
-        </div>
-      </div>
-      <div className=" col-12 col-lg-6">
-        <div className="row">
           <div class="col-6 col-sm-4 mb-2">
             <ProgressProvider valueStart={0} valueEnd={valueEnd8}>
               {(value) => (
@@ -211,6 +139,79 @@ const Skills = () => {
               )}
             </ProgressProvider>
           </div>
+          
+        </div>
+      </div>
+      <div className=" col-12 col-lg-6">
+        <div className="row">
+        <div className="col-4 col-sm-3 mb-2">
+            <ProgressProvider valueStart={0} valueEnd={valueEnd8}>
+              {(value) => (
+                <CircularProgressbarWithChildren
+                  value={value}
+                  styles={buildStyles({
+                    pathColor: "orange",
+                    trailColor: "black",
+                    pathTransitionDuration: 2,
+                  })}
+                >
+                  <img
+                    style={{ width: 50 }}
+                    src={Illustrator}
+                    alt="Illustrator"
+                  />
+                </CircularProgressbarWithChildren>
+              )}
+            </ProgressProvider>
+          </div>
+          <div className="col-4 col-sm-3 mb-2">
+            <ProgressProvider valueStart={0} valueEnd={valueEnd6}>
+              {(value) => (
+                <CircularProgressbarWithChildren
+                  value={value}
+                  styles={buildStyles({
+                    pathColor: "blue",
+                    trailColor: "black",
+                    pathTransitionDuration: 2,
+                  })}
+                >
+                  <img style={{ width: 50 }} src={Photoshop} alt="Photoshop" />
+                </CircularProgressbarWithChildren>
+              )}
+            </ProgressProvider>
+          </div>
+          <div className="col-4  col-sm-3 mb-2">
+            <ProgressProvider valueStart={0} valueEnd={valueEnd8}>
+              {(value) => (
+                <CircularProgressbarWithChildren
+                  value={value}
+                  styles={buildStyles({
+                    pathColor: "violet",
+                    trailColor: "black",
+                    pathTransitionDuration: 2,
+                  })}
+                >
+                  <img style={{ width: 50 }} src={Figma} alt="Figma" />
+                </CircularProgressbarWithChildren>
+              )}
+            </ProgressProvider>
+          </div>
+          <div className="col-4 col-sm-3 mb-2">
+            <ProgressProvider valueStart={0} valueEnd={valueEnd5}>
+              {(value) => (
+                <CircularProgressbarWithChildren
+                  value={value}
+                  styles={buildStyles({
+                    pathColor: "gray",
+                    trailColor: "black",
+                    pathTransitionDuration: 2,
+                  })}
+                >
+                  <img style={{ width: 50 }} src={Gimp} alt="Gimp" />
+                </CircularProgressbarWithChildren>
+              )}
+            </ProgressProvider>
+          </div>
         </div>
       </div>
     </div>
@@ -218,3 +219,4 @@ const Skills = () => {
 };
 
 export default Skills;
+

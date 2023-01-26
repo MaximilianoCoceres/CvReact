@@ -1,8 +1,7 @@
 import React, {useRef} from "react";
 import './contact.css';
 import emailjs from '@emailjs/browser';
-import Cv from '../../img/Maxi Cóceres.pdf';
-import Cv2 from '../../img/Maxi Cóceres.docx';
+import Cv from '../../img/MaxiCoceres.pdf';
 
 
 const Contact = () => {
@@ -29,7 +28,6 @@ const Contact = () => {
         <h1>Contact me and we'll talk</h1>
         <p>If you need to contact me to ask me a question or simply leave me your comment, please feel free to do so.</p>
         <a href={Cv} download="Maxi Cóceres Cv" title="descargar CV"> <button className="btn btn-warning btn-form" >Download CV (PDF)</button></a>
-        <a href={Cv2} download="Maxi Cóceres Cv" title="descargar CV"> <button className="btn btn-warning btn-form" >Download CV (Docx)</button></a>
     </div>
       <div className="form col-8  m-3">
         <form

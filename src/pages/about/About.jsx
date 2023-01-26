@@ -2,8 +2,14 @@ import React from "react";
 import Postit from "../../components/Postit";
 import "./about.css";
 import {AiFillLike} from "react-icons/ai";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const About = () => {
+  AOS.init({offset: 0,
+    duration:500});
+
   return (
     <div>
       <div className="row about">
@@ -18,8 +24,9 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="aboutRight col-12 col-md-6">
+        <div className="aboutRight col-12 col-md-6" >
           <Postit
+          
             styles={{
               background: "#ffff88",
               
@@ -54,6 +61,7 @@ const About = () => {
           </Postit>
         </div>
       </div>
+      
     </div>
   );
 };

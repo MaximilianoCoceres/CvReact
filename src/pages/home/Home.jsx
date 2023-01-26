@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="row home">
       <div className="col-12 col-md-6 photo d-flex">
-        <img src={Perfil} alt="" />
+        <figure><img src={Perfil} alt="" /> </figure>
         <span>Maxi Cóceres- Web Developer</span>
       </div>
       <div className="col-12 col-md-6 d-right">

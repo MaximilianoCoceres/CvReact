@@ -13,7 +13,8 @@ const Whatsapp = () => {
             borderRadius:"50%",
             position:"relative",
             bottom:"0.5em",
-            right:"0"
+            right:"0",
+            marginTop:"1em"
             
         }}/>
         </a>

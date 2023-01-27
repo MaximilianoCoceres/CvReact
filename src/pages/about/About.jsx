@@ -2,19 +2,52 @@ import React from "react";
 import Postit from "../../components/Postit";
 import "./about.css";
 import {AiFillLike} from "react-icons/ai";
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
+import {motion} from "framer-motion";
+
+
+const textAnimation={
+
+    offscreen: {x:-100},
+    onscreen: {x:0,
+      transition:{type:"spring",
+        ease: "easeOut", duration: 0.7 }
+    }
+
+}
+
+
+const postitAnimation={
+
+  offscreen: {x:-100},
+  onscreen: {x:0,
+    transition:{type:"spring",
+      ease: "easeOut", duration: 1.2 }
+  }
+
+}
 
 
 const About = () => {
-  AOS.init({offset: 0,
-    duration:500});
+
 
   return (
     <div>
-      <div className="row about">
-        <div className="col-12 col-md-6 aboutLeft">
-          <div className="t-about">
+      <motion.div 
+      transition={{straggerChildren:0.5}}
+      className="row about">
+        <motion.div 
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+
+        variants={textAnimation}
+
+        className="col-12 col-md-6 aboutLeft">
+          <div className="t-about"
+          
+          
+          >
             <h1>About me</h1>
             <p>
               <mark>Hi! my name is Maxi from Zaragoza, Spain. i'm
@@ -23,8 +56,14 @@ const About = () => {
               fast-paced team environments. Always eager to learn and grow.</mark>
             </p>
           </div>
-        </div>
-        <div className="aboutRight col-12 col-md-6" >
+        </motion.div>
+        <motion.div
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+
+        variants={postitAnimation}
+
+         className="aboutRight col-12 col-md-6" >
           <Postit
           
             styles={{
@@ -34,6 +73,17 @@ const About = () => {
           >
             I study on my own on youtube, platzi, PixelPro.
           </Postit>
+          </motion.div>
+          <motion.div
+          
+          initial={{x:100}}
+        whileInView={"onscreen"}
+
+
+        variants={postitAnimation}
+          >
+
+
           <Postit id={"postit"}
             styles={{
               background: "#86fd90",
@@ -51,6 +101,15 @@ const About = () => {
               <li>Creativity</li>
             </ul>
           </Postit>
+          </motion.div>
+          <motion.div
+          initial={"offscreen"}
+        whileInView={"onscreen"}
+
+
+        variants={postitAnimation}
+          >
+
           <Postit
             styles={{
               background: "#86ddfd",
@@ -59,8 +118,10 @@ const About = () => {
           >
             Tech lover and curious about new technologies
           </Postit>
-        </div>
-      </div>
+          </motion.div>
+       
+
+      </motion.div>
       
     </div>
   );
